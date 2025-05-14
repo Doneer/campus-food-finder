@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Info, List, Filter, Star, Plus, Check, X, ChevronDown, ExternalLink } from 'lucide-react';
 import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
+import qrCode from 'C:/Users/zhuma/OneDrive/Documents/TUL/Team_Project/Solution/campus-food-finder/src/qr-code.png';
 
 const CampusFoodFinder = () => {
   const [locations, setLocations] = useState([]);
@@ -450,12 +451,13 @@ const CampusFoodFinder = () => {
                 <p className="text-sm text-gray-600 mb-3">
                   Save this page to your phone by scanning this QR code. Share with your friends!
                 </p>
-                <div className="bg-gray-100 w-32 h-32 flex items-center justify-center rounded-lg border">
-                  <div className="text-center">
-                    <p className="text-sm text-gray-500">QR Code</p>
-                    <p className="text-xs text-gray-400">Campus Food Finder</p>
-                  </div>
-                </div>
+                <div className="bg-gray-100 w-32 h-32 flex items-center justify-center rounded-lg border overflow-hidden">
+				  <img 
+					src={qrCode}
+					alt="Campus Food Finder QR Code" 
+					className="w-full h-full object-contain p-1"
+				  />
+				</div>
               </div>
               <div>
                 <h3 className="font-medium mb-2">Help Us Grow</h3>
