@@ -46,7 +46,7 @@ Visit the live application: [Campus Food Finder](https://Doneer.github.io/campus
 
 Scan this QR code to access Campus Food Finder on your mobile device:
 
-![QR Code](src/qr-code.png | width=200)
+<img src="src/qr-code.png" alt="QR Code" width="200"/>
 
 ## 🧠 Research Background
 
