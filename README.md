@@ -2,7 +2,7 @@
 
 An interactive web application designed to help university students find affordable and nutritious food options near Lodz University of Technology.
 
-![Campus Food Finder Screenshot](screenshot.png)
+![Campus Food Finder Screenshot](images/screenshot.png)
 
 ## 🍽️ About the Project
 
@@ -46,7 +46,7 @@ Visit the live application: [Campus Food Finder](https://Doneer.github.io/campus
 
 Scan this QR code to access Campus Food Finder on your mobile device:
 
-![QR Code](src/qr-code.png)
+![QR Code](src/qr-code.png | width=200)
 
 ## 🧠 Research Background
 
