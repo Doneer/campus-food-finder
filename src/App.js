@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MapPin, Info, List, Filter, Star, Plus, Check, X, ChevronDown, ExternalLink } from 'lucide-react';
 import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
-import qrCode from 'C:/Users/zhuma/OneDrive/Documents/TUL/Team_Project/Solution/campus-food-finder/src/qr-code.png';
+import qrCode from 'https://Doneer.github.io/campus-food-finder/src/qr-code.png';
 
 const CampusFoodFinder = () => {
   const [locations, setLocations] = useState([]);
