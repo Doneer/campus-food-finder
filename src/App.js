@@ -6,7 +6,6 @@ import { LoginForm, RegisterForm, UserProfile } from './AuthComponents';
 import { NotificationSystem } from './NotificationComponents';
 import { AdminPanel } from './AdminComponents';
 import { GoogleSheetsAPI } from './GoogleSheetsAPI';
-import qrCode from 'https://Doneer.github.io/campus-food-finder/src/qr-code.png';
 
 const CampusFoodFinder = () => {
   const { user, updatePreferences, toggleFavorite } = useAuth();
@@ -16,7 +15,7 @@ const CampusFoodFinder = () => {
     dietary: 'all',
     mealTime: 'all'
   });
-  const [showAllDiscounts, setShowAllDiscounts] = useState(false); // Added for discount override
+  const [showAllDiscounts, setShowAllDiscounts] = useState(false); 
   const [activeTab, setActiveTab] = useState('map');
   const [showModal, setShowModal] = useState(false);
   const [selectedLocation, setSelectedLocation] = useState(null);
@@ -137,8 +136,6 @@ const CampusFoodFinder = () => {
 		  const approvedLocations = await GoogleSheetsAPI.getApprovedLocations();
 		  console.log('Loaded approved locations:', approvedLocations);
 		  
-		  // Combine sample locations with approved locations
-		  // Make sure IDs don't conflict
 		  const maxSampleId = Math.max(...sampleLocations.map(loc => loc.id));
 		  const processedApprovedLocations = approvedLocations.map(loc => ({
 			...loc,
@@ -176,7 +173,6 @@ const CampusFoodFinder = () => {
 		console.log('New location to add:', newLocation);
 		
 		setLocations(prevLocations => {
-		  // Check if location already exists to prevent duplicates
 		  const exists = prevLocations.some(loc => loc.id === newLocation.id || loc.name === newLocation.name);
 		  if (exists) {
 			console.log('Location already exists, skipping...');
@@ -189,7 +185,6 @@ const CampusFoodFinder = () => {
 		  return updatedLocations;
 		});
 		
-		// Single alert message here
 		alert(`✅ ${newLocation.name} has been approved and added to the locations!`);
 	  };
 
@@ -215,7 +210,6 @@ const CampusFoodFinder = () => {
 		return false;
 	  }
 	  
-	  // Apply user preferences only if manual filters are 'all' AND showAllDiscounts is false
 	  if (user && user.preferences && !showAllDiscounts) {
 		if (filters.priceRange === 'all' && user.preferences.priceRange !== 'all') {
 		  if (location.priceRange !== user.preferences.priceRange) {
@@ -260,7 +254,6 @@ const CampusFoodFinder = () => {
       ...filters,
       [filterType]: value
     });
-    // Reset showAllDiscounts when manual filters are used
     if (value !== 'all') {
       setShowAllDiscounts(false);
     }
@@ -759,7 +752,7 @@ const CampusFoodFinder = () => {
                 </p>
                 <div className="bg-gray-100 w-32 h-32 flex items-center justify-center rounded-lg border overflow-hidden">
 				  <img 
-					src={qrCode} 
+					src={process.env.PUBLIC_URL + '/qr-code.png'} 
 					alt="Campus Food Finder QR Code" 
 					className="w-full h-full object-contain p-1"
 				  />
