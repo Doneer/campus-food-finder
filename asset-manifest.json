@@ -1,25 +1,24 @@
 {
   "files": {
     "main.css": "/campus-food-finder/static/css/main.49ca8e89.chunk.css",
-    "main.js": "/campus-food-finder/static/js/main.60a319e0.chunk.js",
-    "main.js.map": "/campus-food-finder/static/js/main.60a319e0.chunk.js.map",
-    "runtime-main.js": "/campus-food-finder/static/js/runtime-main.73392c0c.js",
-    "runtime-main.js.map": "/campus-food-finder/static/js/runtime-main.73392c0c.js.map",
-    "static/js/2.038c3d66.chunk.js": "/campus-food-finder/static/js/2.038c3d66.chunk.js",
-    "static/js/2.038c3d66.chunk.js.map": "/campus-food-finder/static/js/2.038c3d66.chunk.js.map",
-    "static/js/3.6b6f0e45.chunk.js": "/campus-food-finder/static/js/3.6b6f0e45.chunk.js",
-    "static/js/3.6b6f0e45.chunk.js.map": "/campus-food-finder/static/js/3.6b6f0e45.chunk.js.map",
+    "main.js": "/campus-food-finder/static/js/main.a8bc8294.chunk.js",
+    "main.js.map": "/campus-food-finder/static/js/main.a8bc8294.chunk.js.map",
+    "runtime-main.js": "/campus-food-finder/static/js/runtime-main.3be76e59.js",
+    "runtime-main.js.map": "/campus-food-finder/static/js/runtime-main.3be76e59.js.map",
+    "static/js/2.5729193f.chunk.js": "/campus-food-finder/static/js/2.5729193f.chunk.js",
+    "static/js/2.5729193f.chunk.js.map": "/campus-food-finder/static/js/2.5729193f.chunk.js.map",
+    "static/js/3.df683394.chunk.js": "/campus-food-finder/static/js/3.df683394.chunk.js",
+    "static/js/3.df683394.chunk.js.map": "/campus-food-finder/static/js/3.df683394.chunk.js.map",
     "index.html": "/campus-food-finder/index.html",
-    "precache-manifest.187ad447f9395f2e235402beee8c9470.js": "/campus-food-finder/precache-manifest.187ad447f9395f2e235402beee8c9470.js",
+    "precache-manifest.74aa0a39623e8ccbae2534ab734bce6e.js": "/campus-food-finder/precache-manifest.74aa0a39623e8ccbae2534ab734bce6e.js",
     "service-worker.js": "/campus-food-finder/service-worker.js",
     "static/css/main.49ca8e89.chunk.css.map": "/campus-food-finder/static/css/main.49ca8e89.chunk.css.map",
-    "static/js/2.038c3d66.chunk.js.LICENSE.txt": "/campus-food-finder/static/js/2.038c3d66.chunk.js.LICENSE.txt",
-    "static/media/qr-code.png": "/campus-food-finder/static/media/qr-code.bff25580.png"
+    "static/js/2.5729193f.chunk.js.LICENSE.txt": "/campus-food-finder/static/js/2.5729193f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.73392c0c.js",
-    "static/js/2.038c3d66.chunk.js",
+    "static/js/runtime-main.3be76e59.js",
+    "static/js/2.5729193f.chunk.js",
     "static/css/main.49ca8e89.chunk.css",
-    "static/js/main.60a319e0.chunk.js"
+    "static/js/main.a8bc8294.chunk.js"
   ]
 }
