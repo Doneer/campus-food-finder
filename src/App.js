@@ -6,7 +6,7 @@ import { LoginForm, RegisterForm, UserProfile } from './AuthComponents';
 import { NotificationSystem } from './NotificationComponents';
 import { AdminPanel } from './AdminComponents';
 import { GoogleSheetsAPI } from './GoogleSheetsAPI';
-/*import qrCode from 'https://Doneer.github.io/campus-food-finder/src/qr-code.png';*/
+import qrCode from 'https://Doneer.github.io/campus-food-finder/src/qr-code.png';
 
 const CampusFoodFinder = () => {
   const { user, updatePreferences, toggleFavorite } = useAuth();
@@ -759,7 +759,7 @@ const CampusFoodFinder = () => {
                 </p>
                 <div className="bg-gray-100 w-32 h-32 flex items-center justify-center rounded-lg border overflow-hidden">
 				  <img 
-					src={process.env.PUBLIC_URL + '/qr-code.png'} 
+					src={qrCode} 
 					alt="Campus Food Finder QR Code" 
 					className="w-full h-full object-contain p-1"
 				  />
